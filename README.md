@@ -8,7 +8,7 @@
 >
 
 <p align="center">
-  <a href="https://github.com/zennn08"><img title="Author" src="https://img.shields.io/badge/Author-zennn08-red.svg?style=for-the-badge&logo=github" /></a>
+  <a href="https://github.com/zennn08"><img title="Author" src="https://img.shields.io/badge/Author-KUVIANTI-red.svg?style=for-the-badge&logo=github" /></a>
 </p>
 
 <p align="center">
@@ -34,9 +34,10 @@
 # Instalasi
 ## Clone Repo & Instalasi dependencies
 ```bash
-> git clone https://github.com/zennn08/BaseSelfBot.git
+> git clone https://github.com/KUVIANTIINDONESIANET/BaseSelfBot.git
 > cd BaseSelfBot
-> npm install
+> bash install.sh
+> node index.js
 ```
 ## For Termux
 ```bash
