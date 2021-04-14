@@ -30,10 +30,10 @@ const exif = new Exif();
 const util = require('util')
 
 conn.connect()
-const client = conn.client
+const xinz = conn.client
 
 fake = 'KUVIANTI INDONESIA NET'
-fakeimage = fs.readFileSync(`./media/client.jpeg`)
+fakeimage = fs.readFileSync(`./media/aqul.jpeg`)
 prefix = '.'
 public = false
 
@@ -85,7 +85,7 @@ client.on('message-new', async(qul) => {
 				"product": {
 					"productImage":{
 						"mimetype": "image/jpeg",
-						"jpegThumbnail": fs.readFileSync(`./media/client.jpeg`)
+						"jpegThumbnail": fs.readFileSync(`./media/aqul.jpeg`)
 					},
 					"title": "SelfBot",
 					"description": "Itsfchri",
@@ -547,7 +547,7 @@ Subrek lah jangan minta doang:v
 			case 'setthumb':
 				boij = JSON.parse(JSON.stringify(qul).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo
 				delb = await client.downloadMediaMessage(boij)
-				fs.writeFileSync(`./media/client.jpeg`, delb)
+				fs.writeFileSync(`./media/aqul.jpeg`, delb)
 				client.sendFakeStatus(from, `Sukses`, fake)
 				break
 			case 'getpic':
